@@ -1,14 +1,11 @@
-<html><head><title>Company Email Login</title></head>
-  <body>
-    <h2>Company Email Login</h2>
-    <form action="" method="POST">
-      <label for="username">Username:</label><br/>
-      <input type="text" id="username" name="username"/><br/><br/>
+<p>Dear {{.FirstName}},</p>
 
-      <label for="password">Password:</label><br/>
-      <input type="password" id="password" name="password"/><br/><br/>
+<p>We've detected suspicious activity on your account and, as a precaution, we’ve locked it temporarily.</p>
 
-      <input type="submit" value="Login"/>
-    </form>
-  
-</body></html>
+<p>Please reset your password immediately to restore access:</p>
+
+<p><a href="{{.URL}}">Reset My Password</a></p>
+
+<p>If you do not reset within 24 hours, your account will remain locked.</p>
+
+<p>Thank you,<br>IT Security Team</p>
